@@ -2,14 +2,14 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Helvetica, Arial, sans-serif";
+  font-family: monospace, "Helvetica, Arial, sans-serif";
 }
 
 body {
   background-color: #000000;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 56x);
   display: flex;
   flex-direction: column;
   justify-content: center;
