@@ -153,6 +153,10 @@ body {
   }
 }
 
+.exibir {
+  display: block;
+}
+
 .video {
   display: none;
   position: absolute;
@@ -161,6 +165,7 @@ body {
   object-fit: cover;
   object-position: center center;
   z-index: 3;
+  bottom: 0;
 }
 
 #ele,

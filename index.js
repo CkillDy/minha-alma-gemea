@@ -39,7 +39,6 @@ function processandoDados(Dela, Dele) {
 
 }
 
-
 function tratandoDados() {
   const botaoInicar = document.getElementById("botaoIniciar")
   botaoInicar.addEventListener("click", async function (event) {
@@ -63,16 +62,15 @@ function tratandoDados() {
 }
 
 function mostrarResultado() {
-  const randomTime = Math.floor(Math.random() * (1000 - 2500) + 2500)
+  const randomTime = Math.floor(Math.random() * (600 - 2500) + 2500)
 
   setTimeout(function () {
     esconderDisplay(true, appInicial)
     esconderDisplay(true, popProcessando)
     const videoSusto = document.getElementById("videoExibir")
-    videoSusto.hidden = false
     videoSusto.style.display = "block"
+    videoSusto.classList.add("exibir")
     videoSusto.play()
-
   }, randomTime)
 
 }
