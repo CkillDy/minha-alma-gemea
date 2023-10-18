@@ -64,9 +64,11 @@ function tratandoDados() {
 
 function mostrarResultado() {
   const randomTime = Math.floor(Math.random() * (1000 - 2500) + 2500)
+
   setTimeout(function () {
     esconderDisplay(true, appInicial)
     esconderDisplay(true, popProcessando)
+
     const videoSusto = document.getElementById("videoExibir")
     videoSusto.play()
     videoSusto.style.display = "block"
@@ -74,6 +76,7 @@ function mostrarResultado() {
   }, randomTime)
 
 }
+
 
 
 tratandoDados()
