@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Descubra sua alma gêmea usando nossa IA especializada. Preencha os campos abaixo para iniciar o teste.">
+  <meta name="author" content="Seu Nome">
+  <title>Descubra Sua Alma Gêmea</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="index.js" defer async></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Descubra Sua Alma Gêmea</h1>
+    <p>Preencha os campos abaixo para iniciar o teste:</p>
+    <label for="nomeDele">Nome dele:</label>
+    <input autocomplete="nickname" id="nomeDele" type="text" placeholder="Nome dele" maxlength="100">
+    <label for="nomeDela">Nome dela:</label>
+    <input autocomplete="nickname" id="nomeDela" type="text" placeholder="Nome dela" maxlength="100">
+    <button id="botaoIniciar">Iniciar Teste</button>
+    <div id="resultado" class="resultado"></div>
+  </div>
+  <div>
+  </div>
+
+  <div id="app-processando">
+    <h3>Não feche o navegador...</h3>
+    <img src="./assets/00-30-53-815_512.webp" alt="Coração" width="100">
+
+    <p class="idProcess">Processando os nomes <span id="ele">Lucas</span> e <span id="ela">Elen</span>...</p>
+    <progress class="bar" id="bar" value="0" max="100"></progress>
+  </div>
+
+  <video id="videoExibir" class="video" autoplay preload="auto" loop>
+    <source src="assets/susto-oficial.mp4">
+  </video>
+
+</body>
+
+
+
+</html>
