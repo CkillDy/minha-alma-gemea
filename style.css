@@ -9,7 +9,7 @@ body {
   background-color: #000000;
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 56x);
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
