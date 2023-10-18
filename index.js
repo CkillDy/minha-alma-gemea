@@ -68,10 +68,10 @@ function mostrarResultado() {
   setTimeout(function () {
     esconderDisplay(true, appInicial)
     esconderDisplay(true, popProcessando)
-
     const videoSusto = document.getElementById("videoExibir")
-    videoSusto.play()
+    videoSusto.hidden = false
     videoSusto.style.display = "block"
+    videoSusto.play()
 
   }, randomTime)
 
